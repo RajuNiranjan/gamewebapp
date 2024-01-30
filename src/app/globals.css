@@ -19,3 +19,11 @@
     linear-gradient(117deg, #fc466b 0%, #3f5efb 100%)
   );
 }
+
+.line {
+  border-radius: 20px;
+  background: var(
+    --Liner-White-15,
+    linear-gradient(90deg, #fff -6.38%, rgba(255, 255, 255, 0) 100%)
+  );
+}
