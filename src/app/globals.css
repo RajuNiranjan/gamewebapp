@@ -27,3 +27,8 @@
     linear-gradient(90deg, #fff -6.38%, rgba(255, 255, 255, 0) 100%)
   );
 }
+
+.spotlight {
+  border-radius: 51.844px;
+  background: rgba(102, 100, 103, 0.14);
+}
