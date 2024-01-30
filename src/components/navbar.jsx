@@ -38,7 +38,7 @@ const Navbar = () => {
   const deactive = "font-semibold text-white opacity-55";
 
   return (
-    <nav className="h-[80px] bg-[#212121] w-full text-white px-10 flex justify-between items-center">
+    <nav className="h-[80px] bg-[#212121] w-full text-white px-10 flex justify-between items-center sticky top-0">
       <div className="flex justify-center items-center gap-5">
         <div>
           <CiMenuBurger className="text-2xl" />
