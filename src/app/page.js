@@ -1,4 +1,5 @@
 import Explore from "@/components/explore";
+import FeaturedClans from "@/components/featured-clans";
 import FeaturedGames from "@/components/featured-games";
 import Signup from "@/components/signup";
 import Spotlight from "@/components/spotlight";
@@ -10,6 +11,7 @@ const Home = () => {
       <div className=" bg-[#121212] px-20 py-10 text-white">
         <FeaturedGames />
         <Spotlight />
+        <FeaturedClans />
         <Explore />
       </div>
       <Signup />
