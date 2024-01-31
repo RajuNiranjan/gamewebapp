@@ -1,6 +1,7 @@
 import Explore from "@/components/explore";
 import FeaturedClans from "@/components/featured-clans";
 import FeaturedGames from "@/components/featured-games";
+import Quest from "@/components/quest";
 import Signup from "@/components/signup";
 import Spotlight from "@/components/spotlight";
 import React from "react";
@@ -12,6 +13,8 @@ const Home = () => {
         <FeaturedGames />
         <Spotlight />
         <FeaturedClans />
+        <Quest />
+        <Spotlight />
         <Explore />
       </div>
       <Signup />
