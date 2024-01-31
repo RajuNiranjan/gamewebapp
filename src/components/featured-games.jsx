@@ -1,4 +1,5 @@
 import Card from "@/ui/card";
+import Link from "next/link";
 import React from "react";
 
 const FeaturedGames = () => {
@@ -17,7 +18,10 @@ const FeaturedGames = () => {
         </div>
       </div>
       <div className="grid grid-cols-5 gap-2 gap-y-10 mt-10">
+        <Link
+        href={`/IndividualGame/Asphalt`}>
         <Card />
+        </Link>
         <Card />
         <Card />
         <Card />

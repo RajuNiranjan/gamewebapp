@@ -9,7 +9,7 @@ import "../app/globals.css";
 
 const Card = () => {
   return (
-    <div className="w-[253px] h-[500px] bg-[#121212] rounded-[20px] border border-[#3F5EFB] border-opacity-20">
+    <div className="w-[253px] h-[500px] bg-[#121212] rounded-[20px] border border-[#3F5EFB] border-opacity-20 cursor-pointer">
       <div className="w-[250px] h-[350px]">
         <div className="absolute">
           <Image src={img} alt="image" width={250} height={250} />
