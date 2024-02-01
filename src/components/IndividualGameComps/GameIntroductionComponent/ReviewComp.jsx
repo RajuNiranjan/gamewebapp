@@ -1,41 +1,29 @@
-"use client"
-import React from 'react'
-import Review from './Review'
+"use client";
+import React from "react";
+import Review from "./Review";
 
 const ReviewComp = () => {
   return (
-    <div
-    className='w-full text-white'>
+    <div className="w-full text-white my-5">
+      <div className="w-full flex items-center justify-between my-5">
+        <p className="font-[500]  xl:text-[44px]">Reviews</p>
 
-        <div
-        className='w-full flex items-center justify-between'>
+        <button
+          name="write a review button"
+          className="bg-[#7B25C1] rounded-full px-[10px] py-[3px] text-[10px] xl:px-[20px] xl:py-[10px]">
+          Write a review
+        </button>
+      </div>
 
-            <p
-            className='font-[500] text-[44px]'>
-                Reviews
-            </p>
+      <div className="w-full flex flex-col gap-[6px]">
+        <Review />
 
-            <button
-            name='write a review button'
-            className='bg-[#7B25C1] rounded-full px-[20px] py-[10px]'>
-                Write a review
-            </button>
+        <Review />
 
-        </div>
-
-        <div
-        className='w-full flex flex-col gap-[6px]'>
-
-            <Review />
-            
-            <Review />
-
-            <Review />
-
-        </div>
-
+        <Review />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ReviewComp
+export default ReviewComp;

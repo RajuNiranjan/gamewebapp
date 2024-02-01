@@ -98,9 +98,9 @@ const Navbar = () => {
         <div className="xl:hidden">
           <CiMenuBurger className="text-2xl" onClick={() => setShow(!show)} />
         </div>
-        <div className="absolute top-[52px] left-[-100px] xl:hidden">
+        <div className="absolute transition-all duration-500 top-[52px] left-[-100px] xl:hidden">
           {show && (
-            <ul className="flex flex-col  gap-5  rounded-bl-lg shadow-md  py-5  bg-slate-500 w-[164px] px-2">
+            <ul className="flex flex-col transition-all duration-1000  gap-5  rounded-bl-lg shadow-md  py-5  bg-slate-500 w-[164px] px-2">
               {navgarionData?.map((item, index) => (
                 <Link
                   className={`${pathName === item?.path ? active : deactive}`}
