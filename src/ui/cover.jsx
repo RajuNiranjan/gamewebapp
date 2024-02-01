@@ -5,14 +5,14 @@ import image from "../asserts/cover.png";
 const Cover = () => {
   return (
     <div>
-      <div className="mt-10 w-[120px] sm:w-[300px] md:w-[300px] lg:w-[450px] xl:h-[450px] xl:w-[550px]">
+      <div className="mt-10 w-[100px] sm:w-[300px] md:w-[300px] lg:w-[450px] xl:h-[450px] xl:w-[550px]">
         <div>
           <Image
             src={image}
             alt="image"
             width={550}
-            height={3850}
-            className="hover:opacity-75 w-[150px] sm:w-[300px] md:w-[300px] lg:w-[400px]"
+            height={350}
+            className="hover:opacity-75 w-[100px] sm:w-[300px] md:w-[300px] lg:w-[400px]"
           />
         </div>
         <div className="mt-5">

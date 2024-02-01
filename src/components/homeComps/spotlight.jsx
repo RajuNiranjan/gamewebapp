@@ -23,7 +23,7 @@ const Spotlight = () => {
             </button>
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between gap-2">
           <Cover />
           <Cover />
         </div>
