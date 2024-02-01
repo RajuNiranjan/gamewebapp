@@ -8,7 +8,6 @@ import Quest from "@/components/homeComps/quest";
 import Signup from "@/components/homeComps/signup";
 import Spotlight from "@/components/homeComps/spotlight";
 import TopPlayed from "@/components/homeComps/topPlayed";
-import React from "react";
 
 const Home = () => {
   return (

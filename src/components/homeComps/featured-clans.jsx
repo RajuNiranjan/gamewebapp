@@ -16,16 +16,7 @@ const FeaturedClans = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-3 sm:grid-cols-5  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-3 xl:gap-y-10 mt-10">
-        <ClanCard />
-        <ClanCard />
-        <ClanCard />
-        <ClanCard />
-        <ClanCard />
-        <ClanCard />
-        <ClanCard />
-        <ClanCard />
-        <ClanCard />
+      <div className="">
         <ClanCard />
       </div>
     </div>

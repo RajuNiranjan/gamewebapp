@@ -1,8 +1,13 @@
+"use client";
+import { GlobalContext } from "@/context/context";
 import Card from "@/ui/card";
 import Link from "next/link";
 import React from "react";
+import { useContext } from "react";
 
 const FeaturedGames = () => {
+  const { singlePost, setSingleMovieData } = useContext(GlobalContext);
+
   return (
     <div className="text-white my-20">
       <div className="flex justify-between items-center">
@@ -17,19 +22,10 @@ const FeaturedGames = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-3 sm:grid-cols-5  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-3 xl:gap-y-10 mt-10">
-        <Link href={`/IndividualGame/Asphalt`}>
-          <Card />
-        </Link>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+      <div className="">
+        {/* <Link href={`/IndividualGame/Asphalt`}> */}
+        <Card singlePost={singlePost} setSingleMovieData={setSingleMovieData} />
+        {/* </Link> */}
       </div>
     </div>
   );

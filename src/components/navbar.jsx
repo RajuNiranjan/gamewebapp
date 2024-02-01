@@ -46,13 +46,15 @@ const Navbar = () => {
           <CiMenuBurger className="text-2xl" />
         </div>
         <div>
-          <Image
-            src={logo}
-            alt="logo"
-            width={59}
-            height={59}
-            className="w-[40px] h-[40px] xl:w-[59px] xl:h-[59px]"
-          />
+          <Link href="/">
+            <Image
+              src={logo}
+              alt="logo"
+              width={59}
+              height={59}
+              className="w-[40px] h-[40px] xl:w-[59px] xl:h-[59px]"
+            />
+          </Link>
         </div>
       </div>
       <div className="w-[180px] h-7 sm:w-[400px] md:w-[300px] xl:w-[598px] xl:h-[41px] xl:inline-flex">
