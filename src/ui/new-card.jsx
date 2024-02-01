@@ -11,7 +11,7 @@ const NewCard = () => {
           alt="newGame"
           width={200}
           height={200}
-          className="h-[150px] w-[300px] lg:[200px] xl:w-[200px]"
+          className="h-[100px] w-[300px] lg:[200px] xl:w-[200px]"
         />
       </div>
       <div>
