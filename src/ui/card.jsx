@@ -21,12 +21,11 @@ const Card = ({ singlePost, setSingleMovieData }) => {
       {singlePost?.map((item, index) => (
         <div
           key={index}
-          className="w-[100px]  md:w-[200px] md:h-[330px] xl:w-[253px] xl:h-[500px] bg-[#121212] rounded-[20px] border border-[#3F5EFB] border-opacity-20 cursor-pointer">
+          className="w-[100px]  md:w-[200px] md:h-[330px] xl:w-[253px] xl:h-[500px] bg-[#121212] rounded xl:rounded-[20px] border border-[#3F5EFB] border-opacity-20 cursor-pointer">
           <div className="w-max xl:w-[250px] xl:h-[350px]">
             <div
               className="absolute "
-              onClick={() => handelNavgateSinglePage(item)}
-              >
+              onClick={() => handelNavgateSinglePage(item)}>
               <Image
                 src={item?.poster}
                 alt="image"
