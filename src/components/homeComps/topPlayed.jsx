@@ -5,7 +5,7 @@ const TopPlayed = () => {
   return (
     <div>
       <div className="mb-10">
-        <h1 className="text-[40px] font-medium ">
+        <h1 className="text-[24px] xl:text-[40px] font-medium ">
           Top <span className="text-[#571998]">Played</span>
         </h1>
       </div>
