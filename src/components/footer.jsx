@@ -43,9 +43,9 @@ const footerData = [
 
 const Footer = () => {
   return (
-    <footer className="h-[689px] bg-[#060606] text-white flex flex-col justify-between">
+    <footer className="h-max  xl:h-[689px] bg-[#060606] text-white flex flex-col justify-between">
       <div className="flex justify-center mt-10">
-        <div className="grid grid-cols-6 gap-20">
+        <div className="grid grid-cols-3 text-[12px] px-10 gap-10 md:grid-cols-6 lg:grid-cols-6  xl:grid-cols-6 xl:gap-20">
           {footerData?.map((item, index) => (
             <div key={index}>
               <p className="mb-3 font-semibold">{item?.heading}</p>
@@ -60,30 +60,32 @@ const Footer = () => {
       </div>
       <div>
         <p className="hr h-[1px]"></p>
-        <div className="text-white flex justify-center items-center  py-10 gap-20  ">
-          <p>Copyright 2023. Designed by Mancunianz</p>
+        <div className="text-white flex flex-col sm:flex-row sm:justify-center sm:gap-5 md:flex-row md:justify-center md:gap-10 py-3   xl:justify-center items-center  xl:py-10 xl:gap-20  ">
+          <p className="text-[10px]">Copyright 2023. Designed by Mancunianz</p>
           <ul className="flex justify-center items-center gap-5">
-            <li className="w-16 h-16 flex justify-center items-center linearGradient">
-              <IoLogoTwitter className="h-7 w-7" />
+            <li className="h-7 w-7 xl:w-16 xl:h-16 flex justify-center items-center linearGradient">
+              <IoLogoTwitter className="h-3 w-3 xl:h-7 xl:w-7" />
             </li>
-            <li className="w-16 h-16 flex justify-center items-center linearGradient">
-              <FaLinkedinIn className="h-7 w-7" />
+            <li className="h-7 w-7 xl:w-16 xl:h-16 flex justify-center items-center linearGradient">
+              <FaLinkedinIn className="h-3 w-3 xl:h-7 xl:w-7" />
             </li>
-            <li className="w-16 h-16 flex justify-center items-center linearGradient">
-              <AiFillInstagram className="h-7 w-7" />
+            <li className="h-7 w-7 xl:w-16 xl:h-16 flex justify-center items-center linearGradient">
+              <AiFillInstagram className="h-3 w-3 xl:h-7 xl:w-7" />
             </li>
-            <li className="w-16 h-16 flex justify-center items-center linearGradient">
-              <FaYoutube className="h-7 w-7" />
+            <li className="h-7 w-7 xl:w-16 xl:h-16 flex justify-center items-center linearGradient">
+              <FaYoutube className="h-3 w-3 xl:h-7 xl:w-7" />
             </li>
-            <li className="w-16 h-16 flex justify-center items-center linearGradient">
-              <IoLogoWhatsapp className="h-7 w-7" />
+            <li className="h-7 w-7 xl:w-16 xl:h-16 flex justify-center items-center linearGradient">
+              <IoLogoWhatsapp className="h-3 w-3 xl:h-7 xl:w-7" />
             </li>
-            <li className="w-16 h-16 flex justify-center items-center linearGradient">
-              <FaGithub className="h-7 w-7" />
+            <li className="h-7 w-7 xl:w-16 xl:h-16 flex justify-center items-center linearGradient">
+              <FaGithub className="h-3 w-3 xl:h-7 xl:w-7" />
             </li>
           </ul>
-          <p>Privacy Policy</p>
-          <p>Term & Condition</p>
+          <div className="flex">
+            <p className="text-[10px]">Privacy Policy</p>
+            <p className="text-[10px]">Term & Condition</p>
+          </div>
         </div>
       </div>
     </footer>
