@@ -55,14 +55,14 @@ const Navbar = () => {
           />
         </div>
       </div>
-      <div className="w-[200px] h-7 sm:w-[450px] xl:w-[598px] xl:h-[41px] xl:inline-flex">
-        <div className="flex items-center justify-between px-5 w-full h-full  bg-[#3E3E3E] rounded-3xl">
+      <div className="w-[180px] h-7 sm:w-[400px] md:w-[300px] xl:w-[598px] xl:h-[41px] xl:inline-flex">
+        <div className="flex items-center justify-between  w-full h-full  bg-[#3E3E3E] rounded-3xl px-2 xl:px-3">
           <input
             type="text"
             placeholder="Search INDIGG"
-            className="bg-transparent focus:outline-none flex-1 text-[10px]"
+            className="bg-transparent focus:outline-none flex-1 text-[10px] "
           />
-          <CiSearch />
+          <CiSearch className="text-[12px] sm:text-[12px] md:text-[12px] xl:text-[16px] " />
         </div>
       </div>
       <div className="hidden lg:inline-flex md:hidden  xl:inline-flex flex justify-center items-center gap-5">

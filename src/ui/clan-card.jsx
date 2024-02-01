@@ -19,8 +19,9 @@ const ClanCard = () => {
           />
         </div>
         <div className="relative md:ml-[130px]  xl:ml-[30px] top-2 left-[60px] xl:top-5 flex justify-center items-center gap-1">
-          <h1 className="text-[12px] xl:font-bold xl:text-3xl">4.5</h1>
-          <FaStar className="text-[12px] xl:text-3xl text-yellow-400" />
+          <h1 className="text-[8px] xl:text-[10px] xl:px-3 xl:h-[20px] flex justify-center items-center border px-2 rounded-full border-green-500 xl:font-bold xl:text-3xl">
+            Live
+          </h1>
         </div>
       </div>
       <div className="flex item-center justify-between flex-col mt-[125px] px-1 sm:mt-[250px] sm:px-2 md:mt-[290px] md:px-3 xl:mt-5 xl:px-5">

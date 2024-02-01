@@ -20,7 +20,7 @@ const Card = () => {
             className="w-[100px] h-max md:w-[200px]  xl:w-[250px] xl:h-max"
           />
         </div>
-        <div className="relative md:ml-[130px]  xl:ml-[100px] top-2 left-[20px] xl:top-5 flex justify-center items-center gap-2">
+        <div className="relative ml:[100px] md:ml-[100px]  xl:ml-[10px] top-2 left-[3.5rem] xl:top-5 flex justify-center items-center gap-2">
           <h1 className="text-[12px] xl:font-bold xl:text-3xl">4.5</h1>
           <FaStar className="text-[12px] xl:text-3xl text-yellow-400" />
         </div>

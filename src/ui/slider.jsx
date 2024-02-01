@@ -23,8 +23,8 @@ const Slider = () => {
       />
 
       <div>
-        <div className="absolute left-5 top-36 sm:top-20 md:top-64 sm:left-10 lg:top-64 lg:left-10  xl:left-[50px] xl:bottom-[50px] text-white z-0">
-          <p className="text-[12px] sm:text-[24px] xl:text-[54px] xl:font-[500]">
+        <div className="absolute left-5 top-32 sm:top-20 md:top-64 sm:left-10 lg:top-60 lg:left-10  xl:left-[50px] xl:bottom-[50px] text-white z-0">
+          <p className="text-[12px] sm:text-[24px] xl:text-[54px] xl:font-[500] sm:font-semibold">
             Gods Unchained
           </p>
 
@@ -48,10 +48,10 @@ const Slider = () => {
           </p>
 
           <div className="flex gap-5 sm:mt-5">
-            <button className="text-[12px] h-[20px] flex justify-center items-center w-[50px] sm:px-5 py-1 xl:w-[100px]  xl:px-[22px] xl:py-[10px] rounded-full bg-[#7B25C1] mt-[10px]">
+            <button className="text-[12px] h-[20px] flex justify-center items-center w-[50px] sm:px-7 py-1 xl:w-[100px]  xl:px-[22px] xl:py-[10px]] rounded-full bg-[#7B25C1] mt-[10px] md:py-4 sm:py-4 lg:py-5">
               play
             </button>
-            <button className="text-[12px] h-[20px] flex justify-center items-center px-5 py-1 xl:w-[172px]  xl:px-[22px] xl:py-[10px] rounded-full bg-[#242325] mt-[10px]">
+            <button className="text-[12px] h-[20px] flex justify-center items-center px-5 py-1 rounded-full bg-[#242325] mt-[10px] sm:py-4 md:py-4 lg:py-5">
               Explore All Game
             </button>
           </div>

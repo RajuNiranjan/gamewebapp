@@ -12,7 +12,7 @@ const Signup = () => {
           on our decentralized gaming marketplace.{" "}
         </p>
         <div className="mt-4 xl:mt-8">
-          <button className="px-5  py-2 mb-3 xl:w-[417px] xl:h-[54px] rounded-full bg-[#3772FF]">
+          <button className="px-5 text-[10px]  py-2 mb-3 xl:w-[417px] xl:h-[54px] rounded-full bg-[#3772FF]">
             Sign up now to start gaming in the future!
           </button>
         </div>
