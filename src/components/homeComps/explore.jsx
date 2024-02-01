@@ -1,9 +1,9 @@
 import React from "react";
-import "../app/globals.css";
-import game1 from "../asserts/game4.png";
-import game2 from "../asserts/game1.png";
-import game3 from "../asserts/game2.png";
-import game4 from "../asserts/game3.png";
+import "../../app/globals.css";
+import game1 from "../../asserts/game4.png";
+import game2 from "../../asserts/game1.png";
+import game3 from "../../asserts/game2.png";
+import game4 from "../../asserts/game3.png";
 import Image from "next/image";
 
 const Explore = () => {

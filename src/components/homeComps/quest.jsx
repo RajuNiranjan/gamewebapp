@@ -3,7 +3,7 @@ import React from "react";
 
 const Quest = () => {
   return (
-    <div className="text-white ">
+    <div className="text-white my-20">
       <div className="flex justify-between items-center">
         <div>
           <h1 className="font-medium text-[43px]">

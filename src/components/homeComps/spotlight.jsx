@@ -1,5 +1,5 @@
 import React from "react";
-import "../app/globals.css";
+import "../../app/globals.css";
 import { CiLight } from "react-icons/ci";
 import Cover from "@/ui/cover";
 

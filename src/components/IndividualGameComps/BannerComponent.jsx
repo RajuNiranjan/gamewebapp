@@ -20,7 +20,7 @@ const BannerComponent = () => {
         }}
       />
 
-      <div className="absolute left-[50px] bottom-[50px] text-white z-20">
+      <div className="absolute left-[50px] bottom-[50px] text-white z-0">
         <p className="text-[54px] font-[500]">Gods Unchained</p>
 
         <div

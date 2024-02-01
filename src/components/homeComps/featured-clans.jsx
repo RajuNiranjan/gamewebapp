@@ -1,14 +1,13 @@
-import Card from "@/ui/card";
-import Link from "next/link";
+import ClanCard from "@/ui/clan-card";
 import React from "react";
 
-const FeaturedGames = () => {
+const FeaturedClans = () => {
   return (
-    <div className="text-white ">
+    <div className="text-white my-20">
       <div className="flex justify-between items-center">
         <div>
           <h1 className="font-medium text-[43px]">
-            Featured <span className="text-[#571998]">Games</span>
+            Featured <span className="text-[#571998]">Clans</span>
           </h1>
         </div>
         <div>
@@ -18,22 +17,19 @@ const FeaturedGames = () => {
         </div>
       </div>
       <div className="grid grid-cols-5 gap-2 gap-y-10 mt-10">
-        <Link
-        href={`/IndividualGame/Asphalt`}>
-        <Card />
-        </Link>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <ClanCard />
+        <ClanCard />
+        <ClanCard />
+        <ClanCard />
+        <ClanCard />
+        <ClanCard />
+        <ClanCard />
+        <ClanCard />
+        <ClanCard />
+        <ClanCard />
       </div>
     </div>
   );
 };
 
-export default FeaturedGames;
+export default FeaturedClans;

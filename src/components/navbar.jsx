@@ -40,24 +40,24 @@ const Navbar = () => {
   return (
     <nav className="h-[80px] bg-[#212121] w-full text-white px-10 flex justify-between items-center sticky top-0 z-10">
       <div className="flex justify-center items-center gap-5">
-        <div>
+        <div className="hidden xl:inline-flex">
           <CiMenuBurger className="text-2xl" />
         </div>
         <div>
           <Image src={logo} alt="logo" width={59} height={59} />
         </div>
       </div>
-      <div>
-        <div className="flex items-center justify-between px-5 w-[598px] h-[41px] bg-[#3E3E3E] rounded-3xl">
+      <div className="w-[200px] h-7 xl:w-[598px] xl:h-[41px] xl:inline-flex">
+        <div className="flex items-center justify-between px-5 w-full h-full  bg-[#3E3E3E] rounded-3xl">
           <input
             type="text"
             placeholder="Search INDIGG"
-            className="bg-transparent focus:outline-none"
+            className="bg-transparent focus:outline-none flex-1 text-[10px]"
           />
           <CiSearch />
         </div>
       </div>
-      <div className="flex justify-center items-center gap-5">
+      <div className="hidden xl:inline-flex flex justify-center items-center gap-5">
         <div>
           <ul className="flex items-center justify-center gap-5">
             {navgarionData?.map((item, index) => (
@@ -83,6 +83,9 @@ const Navbar = () => {
             Wallet Connect
           </button>
         </div>
+      </div>
+      <div className="xl:hidden">
+        <CiMenuBurger className="text-2xl" />
       </div>
     </nav>
   );
