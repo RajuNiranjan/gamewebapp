@@ -3,11 +3,12 @@ import React from 'react'
 import TwitterIcon from '@/asserts/twitter.png'
 import RedditIcon from '@/asserts/reddit.png'
 import Image from 'next/image'
+import RightSideChatComp from './RightSideChatComp'
 
 const RightComponent = () => {
   return (
     <div
-    className='w-[40%] bg-[#212121] py-[20px] px-[10px]'>
+    className='w-[40%] bg-[#212121] py-[20px] px-[10px] h-fit'>
 
         <div
         className='text-white text-[19px] font-[700] flex items-center gap-[40px]'>
@@ -47,6 +48,12 @@ const RightComponent = () => {
 
             <div
             className='w-full'>
+
+                <RightSideChatComp />
+
+                <RightSideChatComp />
+                
+                <RightSideChatComp />
 
             </div>
 
