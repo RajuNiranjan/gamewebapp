@@ -2,10 +2,11 @@ import React from "react";
 import Image from "next/image";
 import smallImg from "@/asserts/new.png";
 import Banner from "@/asserts/IndividualTempBanner.png";
+import { FaStar } from "react-icons/fa";
 
 const Slider = () => {
   return (
-    <div className="w-[100%] h-[80vh] mx-auto relative">
+    <div className="w-[100%] h-[30vh] sm:h-[60vh] md:h-[80vh] xl:h-[80vh] mx-auto relative">
       <Image
         src={Banner}
         alt="Banner"
@@ -22,46 +23,40 @@ const Slider = () => {
       />
 
       <div>
-        <div className="absolute left-[50px] bottom-[50px] text-white z-0">
-          <p className="text-[54px] font-[500]">Gods Unchained</p>
+        <div className="absolute left-5 top-36 sm:top-20 md:top-64 sm:left-10 lg:top-64 lg:left-10  xl:left-[50px] xl:bottom-[50px] text-white z-0">
+          <p className="text-[12px] sm:text-[24px] xl:text-[54px] xl:font-[500]">
+            Gods Unchained
+          </p>
 
           <div
             className="flex items-center text-[25px] font-[600] gap-[10px]"
             style={{
               textShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25)",
             }}>
-            <p>5.0</p>
+            <p className="text-[12px]">5.0</p>
 
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="38"
-              height="31"
-              viewBox="0 0 38 31"
-              fill="none">
-              <path
-                d="M18.8548 0.502686L23.1748 11.9599H37.1546L25.8447 19.0409L30.1647 30.4981L18.8548 23.4171L7.54492 30.4981L11.8649 19.0409L0.555027 11.9599H14.5348L18.8548 0.502686Z"
-                fill="#F5E01F"
-              />
-            </svg>
+            <div className="text-[12px] text-yellow-400">
+              <FaStar />
+            </div>
 
-            <p>1.3k Reviews</p>
+            <p className="text-[12px]">1.3k Reviews</p>
           </div>
 
-          <p>
+          <p className="text-[10px]">
             Gods Unchained is a free-to-play cards trading game where players
             compete in epic <br /> duels using fantasy cards
           </p>
 
-          <div className="flex gap-5">
-            <button className="w-fit px-[22px] py-[10px] rounded-full bg-[#7B25C1] mt-[10px]">
+          <div className="flex gap-5 sm:mt-5">
+            <button className="text-[12px] h-[20px] flex justify-center items-center w-[50px] sm:px-5 py-1 xl:w-[100px]  xl:px-[22px] xl:py-[10px] rounded-full bg-[#7B25C1] mt-[10px]">
               play
             </button>
-            <button className="w-[172px]  px-[22px] py-[10px] rounded-full bg-[#242325] mt-[10px]">
+            <button className="text-[12px] h-[20px] flex justify-center items-center px-5 py-1 xl:w-[172px]  xl:px-[22px] xl:py-[10px] rounded-full bg-[#242325] mt-[10px]">
               Explore All Game
             </button>
           </div>
         </div>
-        <div className="absolute left-[60%] bottom-[100px] text-white z-0">
+        <div className="absolute left-[60%] bottom-[100px] text-white z-0 hidden xl:inline-flex">
           <div className="flex  gap-4">
             <Image src={smallImg} alt="img" width={150} height={200} />
             <Image src={smallImg} alt="img" width={150} height={200} />

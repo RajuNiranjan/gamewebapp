@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <div className=" bg-[#121212] px-10 xl:px-20 py-10 text-white">
-        {/* <HomeSlider /> */}
+        <HomeSlider />
         <FeaturedGames />
         <Spotlight />
         <FeaturedClans />
