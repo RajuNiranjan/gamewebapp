@@ -51,7 +51,7 @@ const ClanCard = () => {
               </span>
             </div>
             <p className="h-[1px] line my-2 opacity-65"></p>
-            <div className="flex  flex-col items-start justify-between gap-1 md:items-center">
+            <div className="flex  flex-col md:flex-row items-start justify-between gap-1 md:items-center">
               <div className="flex gap-[2px]">
                 <RiMoneyDollarCircleFill className="text-[10px] sm:text-[12px] md:text-[12px] xl:text-[14px]" />
                 <div className="flex flex-row items-center md:flex-col gap-2 ">

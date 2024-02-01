@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
       <div>
         <p className="hr h-[1px]"></p>
-        <div className="text-white flex flex-col sm:flex-row sm:justify-center sm:gap-5 md:flex-row md:justify-center md:gap-10 py-3   xl:justify-center items-center  xl:py-10 xl:gap-20  ">
+        <div className="text-white flex flex-col gap-3 sm:flex-row sm:justify-center sm:gap-5 md:flex-row md:justify-center md:gap-10 py-3   xl:justify-center items-center  xl:py-10 xl:gap-20  ">
           <p className="text-[10px]">Copyright 2023. Designed by Mancunianz</p>
           <ul className="flex justify-center items-center gap-5">
             <li className="h-7 w-7 xl:w-16 xl:h-16 flex justify-center items-center linearGradient">

@@ -58,11 +58,11 @@ const Slider = () => {
             </button>
           </div>
         </div>
-        <div className="absolute left-[60%] bottom-[100px] text-white z-0 hidden xl:inline-flex">
+        <div className="absolute left-[60%] bottom-[70px] text-white z-0 hidden xl:inline-flex">
           <div className="flex  gap-4">
-            <Image src={smallImg} alt="img" width={150} height={200} />
-            <Image src={smallImg} alt="img" width={150} height={200} />
-            <Image src={smallImg} alt="img" width={150} height={200} />
+            <Image src={smallImg} alt="img" width={120} height={200} />
+            <Image src={smallImg} alt="img" width={120} height={200} />
+            <Image src={smallImg} alt="img" width={120} height={200} />
           </div>
         </div>
       </div>
