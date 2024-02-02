@@ -40,7 +40,7 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <nav className="h-[80px] bg-[#212121] w-full text-white px-10 flex justify-between items-center sticky top-0 z-10">
+    <nav className="h-[80px] bg-[#212121] w-full text-white px-5 md:px-10 flex justify-between items-center sticky top-0 z-10">
       <div className="flex justify-center items-center gap-5">
         <div className="hidden xl:inline-flex">
           <CiMenuBurger className="text-2xl" />
@@ -96,17 +96,20 @@ const Navbar = () => {
       </div>
       <div className="relative">
         <div className="xl:hidden">
-          <CiMenuBurger className="text-2xl" onClick={() => setShow(!show)} />
+          <CiMenuBurger
+            className="text-2xl cursor-pointer"
+            onClick={() => setShow(!show)}
+          />
         </div>
-        <div className="absolute transition-all duration-500 top-[52px] left-[-100px] xl:hidden">
+        <div className="absolute transition-all duration-1000 top-[52px] left-[-159px] xl:hidden">
           {show && (
-            <ul className="flex flex-col transition-all duration-1000  gap-5  rounded-bl-lg shadow-md  py-5  bg-slate-500 w-[164px] px-2">
+            <ul className="flex flex-col transition-all duration-1000  gap-5   py-5 h-[1000px] bg-gray-300 text-black w-[200px] px-2">
               {navgarionData?.map((item, index) => (
                 <Link
                   className={`${pathName === item?.path ? active : deactive}`}
                   key={index}
                   href={item?.path}>
-                  <li>{item?.name}</li>
+                  <li className="text-black  p-2 ">{item?.name}</li>
                 </Link>
               ))}
             </ul>
