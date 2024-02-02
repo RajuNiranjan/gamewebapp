@@ -23,7 +23,7 @@ const BannerComponent = () => {
 
       <div
         className="absolute left-5 top-[80px] sm:top-72 sm:left-5
-        md:top-[350px] lg:top-68 lg:left-10 xl:top-[300px] 2xl:top-[800px] text-white z-0 ">
+        md:top-[350px] lg:top-68 lg:left-10 xl:top-[300px] 2xl:top-[300px] text-white z-0 ">
         <p className="text-[12px] sm:text-[24px] xl:text-[54px] xl:font-[500] sm:font-semibold">
           Gods Unchained
         </p>
@@ -33,21 +33,21 @@ const BannerComponent = () => {
           style={{
             textShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25)",
           }}>
-          <p className="text-[12px]">5.0</p>
+          <p className="text-[12px] xl:text-xl">5.0</p>
 
-          <div className="text-[12px] text-yellow-400">
+          <div className="text-[12px] xl:text-xl text-yellow-400">
             <FaStar />
           </div>
 
-          <p className="text-[12px]">1.3k Reviews</p>
+          <p className="text-[12px] xl:text-xl">1.3k Reviews</p>
         </div>
 
-        <p className="text-[10px]">
+        <p className="text-[10px] xl:text-xl">
           Gods Unchained is a free-to-play cards trading game where players
           compete in epic <br /> duels using fantasy cards
         </p>
 
-        <button className="text-[12px] h-[20px] flex justify-center items-center w-[50px] sm:px-7 py-1 xl:w-[100px]  xl:px-[22px] xl:py-[10px]] rounded-full bg-[#7B25C1] mt-[10px] md:py-4 sm:py-4 lg:py-5">
+        <button className="text-[12px] h-[20px] flex justify-center items-center w-[50px] sm:px-7 py-1 xl:w-[100px] xl:text-xl xl:px-[22px] xl:py-[10px]] rounded-full bg-[#7B25C1] mt-[10px] md:py-4 sm:py-4 lg:py-5">
           play
         </button>
       </div>
