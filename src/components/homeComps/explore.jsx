@@ -10,8 +10,8 @@ const Explore = () => {
   return (
     <div
       className="flex flex-col xl:flex-row justify-between
-     sm:items-center md:items-center sm:flex-col md:flex-col lg:flex-row  xl:items-center h-max  xl:h-[800px]">
-      <div className="h-[200px] md:w-[600px]">
+     sm:items-center md:items-center sm:flex-col md:flex-row lg:flex-row  xl:items-center h-max  xl:h-[800px] ">
+      <div className="h-[200px] md:w-[600px] ">
         <Image
           src={game1}
           width={200}

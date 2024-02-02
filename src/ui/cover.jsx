@@ -5,17 +5,17 @@ import image from "../asserts/cover.png";
 const Cover = () => {
   return (
     <div>
-      <div className="mt-10 w-[100px] sm:w-[300px] md:w-[300px] lg:w-[450px] xl:h-[450px] xl:w-[550px]">
+      <div className=" my-5 w-[100px] sm:w-[300px] md:w-[300px] lg:w-[450px] xl:h-[450px] xl:w-[540px] 2xl:w-[550px]">
         <div>
           <Image
             src={image}
             alt="image"
             width={550}
             height={350}
-            className="hover:opacity-75 w-[100px] sm:w-[300px] md:w-[300px] lg:w-[400px]"
+            className="hover:opacity-75 w-[100px] sm:w-[300px] md:w-[300px] lg:w-[450px] xl:w-[540px] 2xl:w-[550px]"
           />
         </div>
-        <div className="mt-5">
+        <div className="mt-2">
           <h1 className="font-bold text-[9px] md:text-[22px] lg:text-[24px] xl:text-[27px]">
             Life Beyond
           </h1>

@@ -6,7 +6,7 @@ import Cover from "@/ui/cover";
 const Spotlight = () => {
   return (
     <div className="my-10">
-      <div className="xl:h-[827px] rounded-lg p-5 xl:rounded-xl spotlight xl:p-20">
+      <div className="xl:h-[827px] rounded-lg p-2 xl:rounded-xl spotlight xl:p-20">
         <div className="flex justify-between items-center">
           <div className="flex justify-center items-center xl:gap-3">
             <CiLight className="md:text-[26px] lg:text-[30px] xl:text-[55px]" />
@@ -18,12 +18,12 @@ const Spotlight = () => {
             </h1>
           </div>
           <div>
-            <button className="md:w-[60px] md:py-2 md:text-[12px] lg:w-[60px] xl:px-[22px] w-[50px] text-[8px] lg:text-[10px] lg:py-[10px] xl:py-[10px] bg-[#7B25C1] rounded-full">
+            <button className="px-3 py-1 text-[9px] sm:text-[14px] xl:font-medium xl:text-[17px] bg-[#7B25C1] lg:px-5 lg:py-2 lg:text-[16px] xl:px-7 xl:py-3 rounded-full">
               View All
             </button>
           </div>
         </div>
-        <div className="flex justify-between gap-2">
+        <div className="flex justify-evenly gap-1 xl:px-1 my-2">
           <Cover />
           <Cover />
         </div>

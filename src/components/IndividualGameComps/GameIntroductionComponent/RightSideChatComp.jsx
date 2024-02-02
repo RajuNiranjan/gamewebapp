@@ -30,13 +30,13 @@ const RightSideChatComp = () => {
 
             <div className="h-[21px] w-[1px] bg-white" />
 
-            <p className="text-[10px] sm:text-[14px] xl:text-[14px]">
+            <p className="text-[8px] sm:text-[14px] xl:text-[14px]">
               #web3gaming
             </p>
           </div>
         </div>
 
-        <p className="text-[10px] sm:text-[14px] xl:text-[14px] mr-2 text-[#868484]">
+        <p className="text-[8px] sm:text-[14px] xl:text-[14px] mr-2 text-[#868484]">
           17 hours ago
         </p>
       </div>

@@ -17,9 +17,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <GlobalContextProvider>
           <div>
-            <Navbar />
+            {/* <Navbar /> */}
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </GlobalContextProvider>
       </body>
