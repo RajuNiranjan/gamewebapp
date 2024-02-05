@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import GameIntroductionComponent from "./GameIntroductionComponent";
 
-const BelowBannerComponent = () => {
+const BelowBannerComponent = ({ details }) => {
   const [activeFilter, setActiveFilter] = useState("Overview");
 
   const allFiltersArray = ["Overview", "Quest", "Clan", "Guide"];
@@ -27,7 +27,7 @@ const BelowBannerComponent = () => {
 
       <div className="mt-[10px] w-full h-[2px] bg-[#2D2D2D]" />
 
-      <GameIntroductionComponent />
+      <GameIntroductionComponent details={details} />
     </div>
   );
 };

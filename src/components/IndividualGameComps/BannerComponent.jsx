@@ -3,12 +3,14 @@ import Banner from "@/asserts/IndividualTempBanner.png";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 
-const BannerComponent = () => {
+const BannerComponent = ({ details }) => {
   return (
     <div className="w-[100%] h-[30vh] sm:h-[60vh] md:h-[80vh] xl:h-[80vh] mx-auto relative">
       <Image
-        src={Banner}
+        src={details?.game_banner}
         alt="Banner"
+        width={400}
+        height={400}
         className="w-full h-full object-cover absolute top-0 left-0 z-0"
       />
 
@@ -25,7 +27,7 @@ const BannerComponent = () => {
         className="absolute left-5 top-[55px] sm:top-[300px] sm:left-5
         md:top-[330px] lg:top-68 lg:left-10 xl:top-[280px] 2xl:top-[280px]   text-white z-0">
         <p className="text-[12px] sm:text-[24px] xl:text-[54px] xl:font-[500] sm:font-semibold">
-          Gods Unchained
+          {details?.game_name}
         </p>
 
         <div
@@ -33,13 +35,13 @@ const BannerComponent = () => {
           style={{
             textShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25)",
           }}>
-          <p className="text-[12px] xl:text-xl">5.0</p>
+          <p className="text-[12px] xl:text-xl">{details?.game_rating}</p>
 
           <div className="text-[12px] xl:text-xl text-yellow-400">
             <FaStar />
           </div>
 
-          <p className="text-[12px] xl:text-xl">1.3k Reviews</p>
+          <p className="text-[12px] xl:text-xl">{details?.game_number_of_reviews} Reviews</p>
         </div>
 
         <p className="text-[10px] xl:text-xl">
