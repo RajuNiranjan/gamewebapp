@@ -10,7 +10,7 @@ const Spotlight = () => {
         <div className="flex justify-between items-center">
           <div className="flex justify-center items-center xl:gap-3">
             <CiLight className="md:text-[26px] lg:text-[30px] xl:text-[55px]" />
-            <h1 className="text-[10px] font-normal md:text-[26px] lg:text-[30px] xl:text-[33px]">
+            <h1 className="text-[14px] font-normal md:text-[26px] lg:text-[30px] xl:text-[33px]">
               Spotlight
               <span className="text-[#571998] xl:text-[33px] ml-2 font-medium">
                 Games

@@ -18,7 +18,7 @@ const ClanCard = () => {
     setSingleMovieData(item);
   };
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-5  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-6 xl:gap-y-10 mt-10  ">
+    <div className="grid grid-cols-3 sm:grid-cols-5  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-10 xl:gap-y-10 mt-10  ">
       {singlePost?.map((item, index) => (
         <div
           key={index}

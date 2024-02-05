@@ -12,7 +12,7 @@ const Cover = () => {
             alt="image"
             width={550}
             height={350}
-            className="hover:opacity-75 w-[160px] sm:w-[300px] md:w-[300px] lg:w-[450px] xl:w-[540px] 2xl:w-[550px]"
+            className="hover:opacity-75 w-[200px] sm:w-[300px] md:w-[300px] lg:w-[450px] xl:w-[540px] 2xl:w-[550px]"
           />
         </div>
         <div className="mt-2">
