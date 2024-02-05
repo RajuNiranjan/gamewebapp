@@ -1,17 +1,26 @@
 "use client";
 import React, { useState } from "react";
-import ImageOne from "@/asserts/gamedemoscreenone.png";
-import ImageTwo from "@/asserts/gamedemoscreentwo.png";
-import ImageThree from "@/asserts/gamedemoscreenthree.png";
-import ImageFour from "@/asserts/gamedemoscreenfour.png";
+// import ImageOne from "@/asserts/gamedemoscreenone.png";
+// import ImageTwo from "@/asserts/gamedemoscreentwo.png";
+// import ImageThree from "@/asserts/gamedemoscreenthree.png";
+// import ImageFour from "@/asserts/gamedemoscreenfour.png";
 import Image from "next/image";
 import { TbCoinBitcoin } from "react-icons/tb";
 import { BsGlobe } from "react-icons/bs";
 import { FaApple } from "react-icons/fa";
 import { GrAndroid } from "react-icons/gr";
 
-const GameScreenShots = () => {
-  const [activeImage, setActiveImage] = useState(ImageOne);
+const GameScreenShots = ({ details }) => {
+
+  const ImageOne = details?.game_screenShots[0]
+  const ImageTwo = details?.game_screenShots[1]
+  const ImageThree = details?.game_screenShots[2]
+  const ImageFour = details?.game_screenShots[3]
+
+  const [activeImage, setActiveImage] = useState(details?.game_screenShots[0]);
+if(details){
+  console.log(details)
+  }
 
   return (
     <div className="w-full mt-[40px] flex flex-col gap-[20px]">
@@ -19,42 +28,52 @@ const GameScreenShots = () => {
         src={activeImage}
         alt="Active Game screen"
         className="w-full h-auto object-cover"
+        width={400}
+        height={400}
       />
 
       <div className="w-full grid grid-cols-4 gap-[4px]">
         <Image
-          src={ImageOne}
+          src={details?.game_screenShots[0]}
           alt="First screen"
           className="w-full h-auto object-cover cursor-pointer"
+          width={400}
+          height={400}
           onClick={() => {
-            setActiveImage(ImageOne);
+            setActiveImage(details?.game_screenShots[0]);
           }}
         />
 
         <Image
-          src={ImageTwo}
+          src={details?.game_screenShots[1]}
           alt="Second screen"
           className="w-full h-auto object-cover cursor-pointer"
+          width={400}
+          height={400}
           onClick={() => {
-            setActiveImage(ImageTwo);
+            setActiveImage(details?.game_screenShots[1]);
           }}
         />
 
         <Image
-          src={ImageThree}
+          src={details?.game_screenShots[2]}
           alt="Three screen"
           className="w-full h-auto object-cover cursor-pointer"
+          width={400}
+          height={400}
           onClick={() => {
-            setActiveImage(ImageThree);
+            setActiveImage(details?.game_screenShots[2]);
           }}
         />
 
         <Image
-          src={ImageFour}
+          src={details?.game_screenShots[3]}
           alt="Fourth screen"
           className="w-full h-auto object-cover cursor-pointer"
+          width={400}
+          height={400}
           onClick={() => {
-            setActiveImage(ImageFour);
+            setActiveImage(details?.game_screenShots[3]);
           }}
         />
       </div>

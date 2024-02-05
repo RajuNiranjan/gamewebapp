@@ -9,13 +9,13 @@ import { useContext } from "react";
 import { GlobalContext } from "@/context/context";
 import TwitchFeed from "@/ui/twitchFeed";
 
-const GameIntroductionComponent = () => {
+const GameIntroductionComponent = ({ details }) => {
   const { singlePost, setSingleMovieData } = useContext(GlobalContext);
 
   return (
     <div className="w-full mt-[20px]">
       <div className="w-full  flex flex-col xl:flex-row gap-[20px]">
-        <LeftComponent />
+        <LeftComponent details={details} />
 
         <RightComponent />
       </div>
