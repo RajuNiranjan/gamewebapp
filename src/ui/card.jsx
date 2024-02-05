@@ -42,7 +42,7 @@ const Card = ({ singlePost, setSingleMovieData }) => {
         <Link
         href={`/IndividualGame/${item?._id}`}
           key={index}
-          className="w-[80px] h-max sm:w-[130px]  md:w-[170px] md:h-max lg:w-[280px] lg:h-max xl:w-[253px]  bg-[#121212]
+          className="w-[110px] h-max sm:w-[130px]  md:w-[170px] md:h-max lg:w-[280px] lg:h-max xl:w-[253px]  bg-[#121212]
             xl:rounded-[20px] border border-[#3F5EFB] border-opacity-20 cursor-pointer ">
           <div className="w-max xl:w-[250px] xl:h-[350px]">
             <div
@@ -54,7 +54,7 @@ const Card = ({ singlePost, setSingleMovieData }) => {
                 alt="image"
                 width={250}
                 height={250}
-              className="w-[80px] h-[100px] rounded-sm  sm:w-[130px] sm:h-[180px] md:w-[170px] md:h-[220px]  lg:w-[280px] lg:h-[380px]   xl:w-[253px] xl:h-[350px] object-cover "
+              className="w-[109px] h-[150px] rounded-sm  sm:w-[130px] sm:h-[180px] md:w-[170px] md:h-[220px]  lg:w-[280px] lg:h-[380px]   xl:w-[253px] xl:h-[350px] object-cover "
               />
             </div>
             <div className="relative ml-[50px] top-2 sm:ml-[90px] sm:top-3 md:ml-[125px] lg:ml-[200px] lg:top-6 w-max xl:ml-[160px] xl:top-5 flex justify-center items-center gap-1 sm:gap-2">
@@ -64,11 +64,11 @@ const Card = ({ singlePost, setSingleMovieData }) => {
               <FaStar className="text-[10px] sm:text-[12px] lg:text-xl xl:text-2xl text-yellow-400" />
             </div>
           </div>
-          <div className="flex item-center justify-between flex-col mt-[90px] sm:mt-[155px] md:mt-[210px] lg:mt-[360px] lg:my-2 xl:mt-0 px-1 py-1 ">
+          <div className="flex item-center justify-between flex-col mt-[140px] sm:mt-[155px] md:mt-[210px] lg:mt-[360px] lg:my-2 xl:mt-0 px-1 py-1 ">
             <h1 className="text-[12px] sm:font-semibold sm:text-[14px] md:text-[12px] md:font-semibold lg:text-xl xl:text-xl xl:font-semibold">
               {item?.game_name}
             </h1>
-            <p className="text-[8px] text-ellipsis overflow-hidden truncate  sm:text-[10px] md:text-[12px] lg:text-[12px]  xl:font-normal xl:text-[14px] flex items-center gap-[10px]">
+            <p className="text-[10px] text-ellipsis overflow-hidden truncate  sm:text-[12px] md:text-[12px] lg:text-[12px]  xl:font-normal xl:text-[14px] flex items-center gap-[10px]">
               {item?.game_category.map((category)=>{
                 return(
                   <span key={category}>{category}</span>

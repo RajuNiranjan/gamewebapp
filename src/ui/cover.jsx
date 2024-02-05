@@ -5,7 +5,7 @@ import image from "../asserts/cover.png";
 const Cover = () => {
   return (
     <div>
-      <div className=" my-5 w-[160px] sm:w-[300px] md:w-[300px] lg:w-[450px] xl:h-[450px] xl:w-[540px] 2xl:w-[550px]">
+      <div className=" my-5 w-full px-2 sm:w-[300px] md:w-[300px] lg:w-[450px] xl:h-[450px] xl:w-[540px] 2xl:w-[550px]">
         <div>
           <Image
             src={image}
