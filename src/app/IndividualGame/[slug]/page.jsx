@@ -1,13 +1,31 @@
 "use client";
 import BannerComponent from "@/components/IndividualGameComps/BannerComponent";
 import BelowBannerComponent from "@/components/IndividualGameComps/BelowBannerComponent";
-import React from "react";
+import axios from "axios";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 const page = () => {
 
-  // const pathname = usePathname();
-  // console.log(pathname)
+ const [details, setDetails] = useState()
 
+  const pathname = usePathname();
+  console.log(pathname)
+
+  useEffect(()=>{
+
+    const allPaths = pathname.split('/')
+    console.log(allPaths[2])
+
+    axios.post('https://indigbackendtwo.onrender.com/games/find-by-id',{ id: allPaths[2]}).
+    then((res)=>{
+      console.log(res.data)
+      setDetails(res.data)
+    }).catch((err)=>{
+      console.log(err)
+    })
+
+  },[])
 
  
   return (
