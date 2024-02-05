@@ -36,14 +36,13 @@ const Card = ({ singlePost, setSingleMovieData }) => {
 
   return (
     <div
-      className="grid grid-cols-3 sm:grid-cols-4 gap-5  md:grid-cols-4 lg:grid-cols-3
+      className="grid grid-cols-3 sm:grid-cols-4 gap-10  md:grid-cols-4 lg:grid-cols-3
      xl:grid-cols-4 2xl:grid-cols-5 ">
       {allgameLists?.map((item, index) => (
         <Link
         href={`/IndividualGame/${item?._id}`}
           key={index}
-          className="w-[110px] h-max sm:w-[130px]  md:w-[170px] md:h-max lg:w-[280px] lg:h-max xl:w-[253px]  bg-[#121212]
-            xl:rounded-[20px] border border-[#3F5EFB] border-opacity-20 cursor-pointer ">
+          className="w-[110px] h-max sm:w-[130px]  md:w-[170px] md:h-max lg:w-[280px] lg:h-max xl:w-[253px]  bg-[#121212] xl:rounded-[20px] border border-[#3F5EFB] border-opacity-20 cursor-pointer ">
           <div className="w-max xl:w-[250px] xl:h-[350px]">
             <div
               className="absolute"
