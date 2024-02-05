@@ -5,9 +5,10 @@ import axios from "axios";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-const page = () => {
 
- const [details, setDetails] = useState()
+const Home = () => {
+
+  const [details, setDetails] = useState()
 
   const pathname = usePathname();
   console.log(pathname)
@@ -25,7 +26,7 @@ const page = () => {
       console.log(err)
     })
 
-  },[])
+  },[pathname])
 
  
   return (
@@ -37,4 +38,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Home;
