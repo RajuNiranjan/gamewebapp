@@ -18,11 +18,11 @@ const ClanCard = () => {
     setSingleMovieData(item);
   };
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-5  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-6 xl:gap-y-10 mt-10 ">
+    <div className="grid grid-cols-3 sm:grid-cols-5  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-5 gap-6 xl:gap-y-10 mt-10  ">
       {singlePost?.map((item, index) => (
         <div
           key={index}
-          className="w-[85px] h-max sm:w-[110px]  md:w-[230px] xl:w-[253px]  bg-[#121212] rounded-md xl:rounded-[20px] border border-[#3F5EFB] border-opacity-20 cursor-pointer">
+          className="w-[85px] h-max sm:w-[110px]  md:w-[230px] xl:w-[253px]  bg-[#121212] rounded-md xl:rounded-[20px] border border-[#3F5EFB] border-opacity-20 cursor-pointer ">
           <div className="w-max xl:w-[250px] xl:h-[350px]">
             <div className="absolute">
               <Image
@@ -31,7 +31,7 @@ const ClanCard = () => {
                 alt="image"
                 width={250}
                 height={250}
-                className="w-[84px] h-max sm:w-[110px] md:w-[230px]  xl:w-[250px] xl:h-max"
+                className="w-[84px] h-max sm:w-[110px] sm:h-[200px] md:w-[230px]  xl:w-[250px] xl:h-max"
               />
             </div>
             <div className="relative md:ml-[130px]  xl:ml-[30px] top-2 left-[45px] xl:top-5 flex justify-center items-center gap-1">
@@ -41,14 +41,14 @@ const ClanCard = () => {
             </div>
           </div>
           <div className="flex item-center justify-between flex-col mt-[100px] sm:mt-[140px] p-1  sm:px-2 md:mt-[300px] md:px-3 xl:mt-0">
-            <h1 className=" text-[10px] sm:text-[14px] md:text-xl xl:text-2xl font-semibold">
+            <h1 className=" text-[12px] sm:text-[14px] md:text-xl xl:text-2xl font-semibold">
               Red devil
             </h1>
-            <div className="flex sm:flex-col md:flex-row md:justify-between sm:justify-start sm:items-start items-center justify-between">
-              <span className="font-normal text-[6px] sm:text-[10px] md:text-[12px] lg:text-[10px] xl:text-[14px]">
+            <div className="flex flex-col text-gray-500 md:text-white justify-start items-start sm:flex-col md:flex-row md:justify-between sm:justify-start sm:items-start ">
+              <span className="font-normal text-[10px] sm:text-[10px] md:text-[12px] lg:text-[10px] xl:text-[14px]">
                 Anouncement
               </span>
-              <span className="font-normal text-[6px] sm:text-[10px] md:text-[12px] lg:text-[10px] xl:text-[14px]">
+              <span className="font-normal text-[10px] sm:text-[10px] md:text-[12px] lg:text-[10px] xl:text-[14px]">
                 Featured
               </span>
             </div>

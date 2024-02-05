@@ -24,8 +24,8 @@ const Slider = () => {
 
       <div>
         <div
-          className="absolute left-5 top-[80px] sm:top-72 sm:left-5
-        md:top-[350px] lg:top-68 lg:left-10 xl:top-[300px] 2xl:top-[300px]   text-white z-0 ">
+          className="absolute left-5 top-[55px] sm:top-[300px] sm:left-5
+        md:top-[330px] lg:top-68 lg:left-10 xl:top-[280px] 2xl:top-[280px]   text-white z-0 ">
           <p className="text-[12px] sm:text-[24px] xl:text-[54px] xl:font-[500] sm:font-semibold">
             Gods Unchained
           </p>
