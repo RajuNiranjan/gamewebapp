@@ -12,10 +12,10 @@ import { GrAndroid } from "react-icons/gr";
 
 const GameScreenShots = ({ details }) => {
 
-  const ImageOne = details?.game_screenShots[0]
-  const ImageTwo = details?.game_screenShots[1]
-  const ImageThree = details?.game_screenShots[2]
-  const ImageFour = details?.game_screenShots[3]
+  // const ImageOne = details?.game_screenShots[0]
+  // const ImageTwo = details?.game_screenShots[1]
+  // const ImageThree = details?.game_screenShots[2]
+  // const ImageFour = details?.game_screenShots[3]
 
   const [activeImage, setActiveImage] = useState(details?.game_screenShots[0]);
 if(details){
