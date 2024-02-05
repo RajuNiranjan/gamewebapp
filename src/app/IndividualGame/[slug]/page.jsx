@@ -1,6 +1,7 @@
 "use client";
 import BannerComponent from "@/components/IndividualGameComps/BannerComponent";
 import BelowBannerComponent from "@/components/IndividualGameComps/BelowBannerComponent";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const page = () => {
